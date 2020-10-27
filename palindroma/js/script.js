@@ -12,7 +12,7 @@
 // 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 
 // input della Parola
-var input = prompt('');
+var input = prompt('Inserisci una parola da definire');
 console.log(input);
 
 // versione senza funzione
@@ -36,3 +36,6 @@ if (stringaReverse == input) {
 }
 
 // versione con funzione...
+function provaFunzione(num1, num2) {
+
+}
