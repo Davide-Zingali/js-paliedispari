@@ -5,22 +5,21 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-// stesura senza fuinzione
 // input per la scelta se pari o dispari
 var inputParioDispari = prompt('Scegli tra pari o dispari');
 console.log(inputParioDispari);
-
 
 // input utente numero da 1 a 5
 var inputNumero = parseInt(prompt('Scegli un numero da 1 a 5'));
 console.log('Numero scelto da Utente: ' + inputNumero);
 
 // numero random da 1 a 5 scelto dal computer
-var numeroRandom = Math.floor(Math.random() * 5) + 1;
+var numeroRandom = numeroR();
 console.log('Numero random computer: ' + numeroRandom);
 
 // somma del risultato
-var sommaNumeriInput = inputNumero + numeroRandom;
+// var sommaNumeriInput = inputNumero + numeroRandom;
+var sommaNumeriInput = sommaNumeriF();
 console.log('Somma dei numeri input: ' + sommaNumeriInput);
 
 // verificare se risultato pari o dispari
@@ -48,4 +47,15 @@ if (pari == 1 && 'pari' == inputParioDispari) {
   console.log('Hai perso!!!');
 };
 
-// stesura con funzione....
+// funzione....
+// numero random
+function numeroR() {
+  var risultato = Math.floor(Math.random() * 5) + 1;
+  return risultato;
+};
+
+// somma risultato
+function sommaNumeriF() {
+  var risultatoSomma = inputNumero + numeroRandom;
+  return risultatoSomma;
+}
